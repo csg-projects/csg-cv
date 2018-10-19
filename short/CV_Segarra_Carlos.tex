@@ -5,18 +5,21 @@
 
 %\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 \usepackage{url,parskip} % Formatting packages
+\usepackage{graphicx}
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
 %\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
-\usepackage[left=3.2cm,right=4.2cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[left=3.2cm,right=3.2cm,top=2cm,bottom=2.5cm]{geometry}
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+\usepackage{array}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 \usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\section}{\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
 \begin{document}
@@ -25,41 +28,56 @@
 
 %\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
 
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
+%\vspace{-20pt}
 
+%\begin{center}
+%\begin{huge}
+%Carlos Segarra
+%\end{huge}
+%
+%\begin{tabular}{c}
+%    Polytechnical University of Catalonia  $\cdot$ \href{mailto:carlossegarragonzalez@gmail.com}{carlossegarragonzalez@gmail.com}\\[4pt]
+%\end{tabular}
+%\end{center}
 
-\vspace{-20pt}
+\section{Personal Information}
 
-\begin{center}
-\begin{huge}
-Carlos Segarra
-\end{huge}
-
-\begin{tabular}{rl}
-Polytechnical University of Catalonia  & \href{mailto:carlossegarragonzalez@gmail.com}{carlossegarragonzalez@gmail.com}
-\end{tabular}
-\end{center}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE 
-%----------------------------------------------------------------------------------------
-\vspace{-5pt}
+\begin{table}[ht]
+\begin{minipage}{0.77\linewidth}
+    \begin{tabular}{R{2.5cm}p{3cm}}
+        Name: & Carlos Segarra \\
+        Date of birth: & 09/06/1996 \\
+        Place of birth: & Barcelona, Spain \\
+        Residence: & Neuchatel, CH \\
+        Mail: & carlossegarragonzalez@gmail.com \\
+        Phone: & +41 79 935 95 41
+    \end{tabular}
+\end{minipage}\hfill
+\begin{minipage}{0.2\linewidth}
+\centering
+\includegraphics[width=2.5cm]{carlos_portrait.png}
+\end{minipage} 
+\end{table}
 
 \section{Work Experience}
 %
-\begin{tabular}{r|p{15cm}}
-\emph{June 2018} & Research Student at \textsc{Barcelona Supercomputing Center (BSC)}, Barcelona \\
-\textsc{Apr 2017} & \emph{Workflows and Distributed Computing Group}\\ 
-& \footnotesize{Work in the development of parallel clustering algorithms for distributed architectures.}\\
-\multicolumn{2}{c}{} \\
+\begin{tabular}{R{2.5cm}|p{11.5cm}}
+    \emph{Current} & Trainee at \textsc{CSEM} \\
+    \textsc{June 2018} & \small{\emph{Embedded Software Division} - Sup. Ricard Delgado Gonzalo, PhD }\\ 
+& \footnotesize{Summer internship at the the Cybersecurity department at Nokia Bell Labs in Paris-Saclay, France. There, I worked in Bitcoin's Blockchain security. We defined, designed and implemented a modelling scheme for malicious transaction and their derived chains. With this abstraction model we identified servicies within the Bitcoin ecosystem and we applied it to identity-oriented address clustering. }
 \end{tabular}
-%------------------------------------------------
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+\begin{tabular}{R{3cm}|p{11cm}}
+    \textsc{September 2018} & Trainee at \textsc{Nokia Bell Labs} \\
+    \textsc{June 2018} & \small{\emph{Security Group} - Sup. Matteo Signorini, PhD and Matteo Pontecorvi, PhD}\\ 
+& \footnotesize{Summer internship at the the Cybersecurity department at Nokia Bell Labs in Paris-Saclay, France. There, I worked in Bitcoin's Blockchain security. We defined, designed and implemented a modelling scheme for malicious transaction and their derived chains. With this abstraction model we identified servicies within the Bitcoin ecosystem and we applied it to identity-oriented address clustering. }
+\end{tabular}
+
+\begin{tabular}{R{2.5cm}|p{11.5cm}}
+\textsc{June 2018} & Research Student at \textsc{Barcelona Supercomputing Center} \\
+    \textsc{Apr 2017} & \small{\emph{Workflows and Distributed Computing Group} - Sup. Rosa M. Badia, PhD} \\ 
+& \footnotesize{The workflows and distributed computing group at the Barcelona Supercomputint Center located in Barcelona, Spain, develops a programming framework, \href{https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/}{COMPSs}, which aims to ease the development of applications for distributed architectures. During my work there, I developed clustering algorithms in the Python binding of the software to test the scalability of the framework as well as new functionalities. All the executions were performed in the Mare Nostrum 4 supercomputer, enabling the use of bigger datasets and greater computational resources.}
+\end{tabular}
 
 \section{Education}
 
