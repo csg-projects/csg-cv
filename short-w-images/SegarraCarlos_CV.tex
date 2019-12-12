@@ -13,7 +13,7 @@
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 %\usepackage[left=2cm,right=2cm,top=1.5cm,bottom=1.5cm]{geometry}
 \usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
-\usepackage{hyperref} % Required for adding links	and customizing them
+\usepackage[pdfa]{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 \usepackage{array}
@@ -95,7 +95,7 @@
     Under the supervision of V. Schiavoni, we work on \textsc{Kollaps}, an emulation platform for distributed applications.
     We emulate arbitrary topologies basing on their end-to-end properties: bandwidth, jitter, latency, and packet loss. 
     Dynamic link behaviours are also emulated. 
-    To do so, we make use if traffic control functionalities available in the Linux Kernel. 
+    To do so, we make use of traffic control functionalities available in the Linux Kernel. 
     For the emulated applications we rely on Docker containers and orchestrators such as Swarm and Kubernetes.
     In parallel, we are also working on benchmarking of Trusted Execution Environments and applications leveraging them.
     } &
