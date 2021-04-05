@@ -14,7 +14,7 @@ jobs:
       - name: "Checkout code"
         uses: actions/checkout@v2
       - name: "Change to adequate directory"
-        run: cd ./short
+        run: cd ./short && ls -l
       - name: "Compile LaTeX document"
         uses: hspaans/latexmk-action@v1.0.11
         with:
