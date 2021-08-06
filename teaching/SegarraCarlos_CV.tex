@@ -1,0 +1,121 @@
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+%{{{ Packages & Includes
+%\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{url,parskip} % Formatting packages
+\usepackage{graphicx}
+\usepackage{adjustbox}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+\usepackage{array}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+
+\titlespacing{\section}{0pt}{8pt}{3pt} % Spacing around sections
+%}}}
+
+% Variable Definition
+\newcommand\rightColumnWidth{13.55cm}
+\newcommand\leftColumnWidth{1.75cm}
+\newcommand\pageWidth{16cm}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\section{Personal Information}
+
+\begin{table}[ht]
+    \begin{tabular}{L{1.75cm}p{3cm}p{1cm}L{1.4cm}L{1.5cm}L{0.5cm}L{1.5cm}L{3cm}}
+        Full Name: & \textbf{Carlos Segarra} & & \multicolumn{2}{l}{\textbf{Languages:}}  & & \multicolumn{2}{l}{\textbf{Teaching preferences:}}\\
+        Birth year: & 1996 & & Spanish: & Native & & \multicolumn{2}{l}{Mathematics} \\
+        Residence: & London, UK & & English: & Proficient & & \multicolumn{2}{l}{Computer Science} \\
+        Mail: & \small{\href{mailto:carlos@carlossegarra.com}{carlos@carlossegarra.com}} & & German: & Basic & & \multicolumn{2}{l}{Programming} \\
+        Phone: & +34 699208900 & & French: & Fluent \\
+    \end{tabular}
+\end{table}
+
+\section{Short Bio}
+\begin{tabular}{p{\pageWidth}}
+    I am a second year PhD student in Computer Science at Imperial College.
+    I received a MSc in advanced mathematics, a BSc in mathematics, and a BSc
+    in electrical engineering from the Technical University of Catalonia.
+
+    Originally from Barcelona in Spain, I have worked and lived in
+    France, Switzerland, and now the UK.
+    I can speak spanish, english, and catalan perfectly, french very fluently,
+    and german modestly.
+
+    Currently, I am a teaching assistant at the Department of Computing of Imperial.
+    I specialise in discrete mathematics and algorithms.
+    I am willing to teach mathematics at any curricular level, and computer
+    science and programming both curricular and extra-curricular.
+\end{tabular}
+
+\section{Course Offering}
+%
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
+    \textsc{Mathematics} & 
+    Willing to teach any area of mathematics at any curricular level.
+    
+    \\
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
+    \textsc{Computer Science} & Research Assistant at the \textbf{\textsc{Universit\'e de Neuch\^atel}} \\
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
+    \textsc{Programming} & 
+    I have several years of experience as a software engineer, and can teach
+    programming both for curricular tasks, and as an extra-curricular activity.
+    I believe
+    \\
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
+    \textsc{09/2018} & Trainee at \textbf{\textsc{Nokia Bell Labs}} \\
+    \textsc{06/2018} & \small{\emph{Security Group} - Sup. Matteo Signorini, PhD and Matteo Pontecorvi, PhD}\\ 
+% & \footnotesize{Summer intern at the the Cybersecurity department at Nokia Bell Labs in Paris-Saclay, France. I developed a graph-based model to detect, cluster and classify chains of malicious transactions in the Bitcoin's Blockchain. By defining an abstraction layer atop the chain and an isomorphism class, we managed to identify a variety of malicious services.}
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}
+    \textsc{06/2018} & Research Student at the \textbf{\textsc{Barcelona Supercomputing Center} (BSC)} \\
+    \textsc{04/2017} & \small{\emph{Workflows and Distributed Computing Group} - Sup. Rosa M. Badia, PhD} \\ 
+    % & \footnotesize{Research student at the Workflows and Distributed Computing Group at the BSC in Barcelona, Spain. I developed, deployed and benchmarked a distributed implementation of the DBSCAN clustering algorithm using COMP Superscalar, a programming model for distributed computing. Evaluation was done in the \textit{Mare Nostrum} supercomputer.}
+\end{tabular}
+\section{Education}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}	
+    \emph{Current} & PhD in Computing \\
+    \textsc{10/2020} & Imperial College London - Sup. Professor Peter Pietzuch \\
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}	
+    \textsc{07/2020} & Master in \textbf{\textsc{Advanced Mathematics and Mathematical Engineering}} \\ 
+    \textsc{09/2019} & \small{\emph{Technical University of Catalonia}, UPC}\\
+     % & \footnotesize{MSc in Advanced Mathematics with a focus in Discrete Mathematics and Algorithms. Enrolled to courses from the Master in Research in Informatics (MIRI-UPC). Relevant courses cover: Graph Theory, Codes and Cryptography, and Concurrence, Parallelism, and Distributed Systems.}
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}	
+    \textsc{05/2019} & Bachelor's degree in \textbf{\textsc{Mathematics}} \\ 
+    \textsc{09/2014} & \small{\emph{Technical University of Catalonia}, UPC}\\
+     % & \footnotesize{BSc in Mathematics within a double degree program in the Interdisciplinary Higher Education Center (CFIS) at the UPC. Relevant coursework covers real and complex analysis, statistics, probability and graph theory, combinatorics and algorithms.}
+\end{tabular}
+
+\begin{tabular}{R{\leftColumnWidth}|p{\rightColumnWidth}}	
+    \textsc{05/2019} &  Bachelor`s degree in \textbf{\textsc{Telecommunications Science and Technology}}\\ 
+    \textsc{09/2014} & \small{\emph{Technical University of Catalonia}, UPC} \\
+     % & \footnotesize{BSc in Telecommunications Engineering within a double degree program in the Interdisciplinary Higher Education Center (CFIS) at the UPC. Relevant coursework covers networking and concurrency, digital and analogical communications and real time digital signal processing.}
+\end{tabular}
+
+\end{document}
