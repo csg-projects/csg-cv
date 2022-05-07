@@ -5,3 +5,5 @@ tags*
 *.log
 *.out
 *.pdf
+*latexmk
+*.fls
