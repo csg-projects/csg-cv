@@ -6,3 +6,4 @@ how to compile each of them can be found in the particular directories.
 ## CV Versions (only consolidated ones)
 
 * Short: no images, one-page.
+* Teaching: for teaching duties
