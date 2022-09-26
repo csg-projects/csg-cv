@@ -1,4 +1,4 @@
-name: Build CVs
+name: "Build CV: Teaching"
 
 on:
   push:
@@ -17,4 +17,4 @@ jobs:
         uses: hspaans/latexmk-action@v1.0.11
         with:
           format: pdf
-          filename: ./short/SegarraCarlos_CV.tex
+          filename: ./teaching/SegarraCarlos_CV.tex
