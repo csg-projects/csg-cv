@@ -1,4 +1,4 @@
-name: "Build CV: Short"
+name: "Build CV: Academic"
 
 on:
   push:
