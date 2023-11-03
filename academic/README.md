@@ -10,5 +10,5 @@ Build the PDF file with:
 docker run --rm \
   -v $(pwd):/workdir \
   -u $(id -u):$(id -g) \
-  csegarragonz/latex-docker:0.1.2 SegarraCarlos_CV.tex
+  csegarragonz/latex-docker:0.1.4 SegarraCarlos_CV.tex
 ```
